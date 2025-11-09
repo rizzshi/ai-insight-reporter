@@ -176,7 +176,7 @@ class EDAEngine:
             cbar_kws={"shrink": 0.8}
         )
         
-    plt.title('Correlation Matrix - Eviden Analysis', fontsize=16, fontweight='bold', pad=20)
+        plt.title('Correlation Matrix - Eviden Analysis', fontsize=16, fontweight='bold', pad=20)
         plt.tight_layout()
         
         output_path = self.output_dir / "correlation_heatmap.png"

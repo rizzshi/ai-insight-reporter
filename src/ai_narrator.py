@@ -61,7 +61,7 @@ class AINarrator:
         dataset_info = eda_summary.get('dataset_info', {})
         missing_info = eda_summary.get('missing_values', {})
         
-    prompt = f"""You are a senior business analyst at Eviden (Created by Algorzen). Analyze the following dataset and provide an executive-level business intelligence report.
+        prompt = f"""You are a senior business analyst at Eviden (Created by Algorzen). Analyze the following dataset and provide an executive-level business intelligence report.
 
 DATASET OVERVIEW:
 - Type: {dataset_info.get('dataset_type', 'general').title()}
