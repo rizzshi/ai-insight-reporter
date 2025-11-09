@@ -29,6 +29,31 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
+# Custom CSS for DataFrame tables
+st.markdown("""
+<style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 14px;
+    }
+    th {
+        background-color: #0e1117;
+        color: white;
+        padding: 10px;
+        text-align: left;
+        border-bottom: 2px solid #ff4b4b;
+    }
+    td {
+        padding: 8px;
+        border-bottom: 1px solid #333;
+    }
+    tr:hover {
+        background-color: #1a1a1a;
+    }
+</style>
+""", unsafe_allow_html=True)
+
 # Custom CSS
 st.markdown("""
     <style>
