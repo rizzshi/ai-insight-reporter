@@ -104,8 +104,16 @@ def main():
     """
     # Sidebar
     with st.sidebar:
-        st.image("https://via.placeholder.com/200x80/1a1a2e/ffffff?text=ALGORZEN", use_column_width=True)
-        st.markdown("### 🎯 AI Insight Reporter")
+        # Display Eviden logo
+        logo_path = Path(__file__).parent / "assets" / "eviden_logo.png"
+        if logo_path.exists():
+            st.image(str(logo_path), use_column_width=True)
+            st.markdown("<p style='text-align: center;'><b>Created by Algorzen</b></p>", unsafe_allow_html=True)
+        else:
+            st.markdown("### 📊 Eviden")
+            st.markdown("**Created by Algorzen**")
+        
+        st.markdown("### 🎯 Insight Reporter")
         st.markdown("**Autonomous Business Intelligence**")
         st.markdown("---")
         
@@ -327,7 +335,7 @@ def main():
         - **Comprehensive EDA**: Missing values, statistics, correlations, and distributions
         - **Smart KPI Extraction**: Context-aware metrics based on dataset type
         - **GPT-4 Integration**: Executive-level narratives with actionable recommendations
-        - **Professional Reports**: Branded PDFs with Algorzen formatting
+        - **Professional Reports**: Branded PDFs with Eviden formatting (Created by Algorzen)
         - **Fallback Mode**: Works offline without OpenAI API
         """
         st.markdown(features)
@@ -335,8 +343,8 @@ def main():
     # Footer
     st.markdown("""
     <div class="footer">
-        <strong>AI Insight Reporter v1.0</strong> | Algorzen Research Division<br>
-        Developed by Om Singh | © 2025 Algorzen Research | Powered by GPT-4 & Python
+        <strong>Eviden Insight Reporter v1.0</strong> | Created by Algorzen<br>
+        Developed by Rishi Singh | © 2025 Algorzen | Powered by GPT-4 & Python
     </div>
     """, unsafe_allow_html=True)
 
