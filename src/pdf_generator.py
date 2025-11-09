@@ -261,7 +261,7 @@ class EvidenReportTemplate:
         self.story.append(kpi_table)
         self.story.append(Spacer(1, 0.3*inch))
     
-    def add_image(self, image_path: str, width: float = 6.5, caption: str = None):
+    def add_image(self, image_path: str, width: float = 6.5, caption: Optional[str] = None):
         """
         Add image to report
         

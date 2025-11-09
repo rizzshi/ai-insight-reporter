@@ -1,6 +1,12 @@
-# 🤖 AI Insight Reporter
 
-> **Autonomous Business Intelligence System by Algorzen Research Division**
+<p align="center">
+  <img src="assets/eviden_logo.png" alt="Eviden" width="220"/>
+</p>
+
+# 🤖 Eviden Insight Reporter
+
+> **Autonomous Business Intelligence System by Eviden**
+
 
 An enterprise-grade data analytics automation platform that transforms raw datasets into executive-level business intelligence reports with AI-powered narratives, comprehensive EDA, and professional PDF outputs.
 
@@ -25,7 +31,7 @@ An enterprise-grade data analytics automation platform that transforms raw datas
 - ✅ **Actionable Recommendations** — Data-driven strategic insights
 
 ### 🔹 Professional Reporting
-- ✅ **Branded PDF Reports** — Algorzen Research Division formatting
+- ✅ **Branded PDF Reports** — Eviden formatting
 - ✅ **Executive Presentation Quality** — Ready for stakeholder meetings
 - ✅ **Metadata Tracking** — JSON reports with full traceability
 - ✅ **Multi-Format Support** — CSV, Excel, Parquet inputs
