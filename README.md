@@ -363,7 +363,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## 👨‍💻 Author
 
 **Rishi Singh**  
-Algorzen Research Division
+Eviden (Created by Algorzen)
 
 - GitHub: [@rizzshi](https://github.com/rizzshi)
 - Project: [DataSphere/AiInsight](https://github.com/rizzshi/DataSphere)
@@ -405,9 +405,9 @@ For questions, issues, or feature requests:
 
 <div align="center">
 
-**Built with ❤️ by Algorzen Research Division**
+**Built with ❤️ by Algorzen**
 
-*Transforming Data into Strategic Intelligence*
+*Eviden - Transforming Data into Strategic Intelligence*
 
 [![Python](https://img.shields.io/badge/Python-3.10+-blue?logo=python&logoColor=white)](https://python.org)
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.28+-red?logo=streamlit&logoColor=white)](https://streamlit.io)

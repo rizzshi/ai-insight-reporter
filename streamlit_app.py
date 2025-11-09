@@ -1,6 +1,6 @@
 """
-Streamlit UI - AI Insight Reporter Web Interface
-Algorzen Research Division
+Streamlit UI - Eviden Insight Reporter Web Interface
+Created by Algorzen
 
 Interactive web application for uploading datasets, previewing EDA results,
 and generating comprehensive AI-powered business intelligence reports.
@@ -23,7 +23,7 @@ from src.pdf_generator import generate_pdf_report
 
 # Page configuration
 st.set_page_config(
-    page_title="AI Insight Reporter - Algorzen",
+    page_title="Eviden Insight Reporter",
     page_icon="📊",
     layout="wide",
     initial_sidebar_state="expanded"

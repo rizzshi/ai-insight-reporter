@@ -1,6 +1,6 @@
 """
-Main CLI - Command Line Interface for AI Insight Reporter
-Algorzen Research Division
+Main CLI - Command Line Interface for Eviden Insight Reporter
+Created by Algorzen
 
 Run automated analysis from the command line.
 """
@@ -24,7 +24,7 @@ def main():
     Main CLI entry point
     """
     parser = argparse.ArgumentParser(
-        description="AI Insight Reporter - Automated Business Intelligence",
+        description="Eviden Insight Reporter - Automated Business Intelligence (Created by Algorzen)",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:
@@ -32,7 +32,7 @@ Examples:
   python main.py sales_data.xlsx --author "John Doe"
   python main.py customer_data.csv --api-key sk-xxx --output custom_reports/
 
-© 2025 Algorzen Research Division | Developed by Rishi Singh
+© 2025 Algorzen | Developed by Rishi Singh
         """
     )
     
