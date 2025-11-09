@@ -1,6 +1,6 @@
 """
 PDF Report Generator - Professional Business Intelligence Reports
-Algorzen Research Division
+Eviden (Created by Algorzen)
 
 This module generates branded PDF reports combining EDA visualizations,
 KPIs, and AI-generated narratives with executive-level presentation quality.
@@ -399,8 +399,8 @@ def generate_pdf_report(
     
     # Generate metadata JSON
     metadata = {
-        "project": "AI Insight Reporter",
-        "report_id": f"AIR-2025-Q4-{timestamp}",
+        "project": "Eviden Insight Reporter",
+        "report_id": f"EVD-2025-Q4-{timestamp}",
         "generated_by": author,
         "created_at": datetime.now().isoformat(),
         "tone": "Executive Business",
