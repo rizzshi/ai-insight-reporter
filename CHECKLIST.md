@@ -52,7 +52,7 @@ All requirements met, fully tested, production-ready.
 - [x] Combine visuals, EDA summary, and GPT narrative
 - [x] Include Algorzen branding:
   - [x] Header: *"Algorzen Research Division — AI Insight Reporter"*
-  - [x] Footer: *"© 2025 Algorzen Research | Author: Om Singh"*
+  - [x] Footer: *"© 2025 Algorzen Research | Author: Rishi Singh"*
 - [x] Save report with timestamp: `reports/Algorzen_Insight_Report_YYYYMMDD.pdf`
 
 **Implementation:** `src/pdf_generator.py` (420 lines)
@@ -94,7 +94,7 @@ All requirements met, fully tested, production-ready.
   {
     "project": "AI Insight Reporter",
     "report_id": "AIR-2025-Q4-001",
-    "generated_by": "Om Singh",
+  "generated_by": "Rishi Singh",
     "created_at": "<timestamp>",
     "tone": "Executive Business",
     "openai_used": true
@@ -355,7 +355,7 @@ All requirements satisfied, fully documented, tested, and ready for use.
 
 ---
 
-Built with ❤️ by Om Singh
+Built with ❤️ by Rishi Singh
 
 Algorzen Research Division
 

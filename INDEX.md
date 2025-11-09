@@ -426,4 +426,4 @@ All documents are written to be:
 
 Built with ❤️ by Algorzen Research Division
 
-© 2025 Algorzen Research | Om Singh
+© 2025 Algorzen Research | Rishi Singh

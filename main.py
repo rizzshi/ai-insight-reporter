@@ -32,7 +32,7 @@ Examples:
   python main.py sales_data.xlsx --author "John Doe"
   python main.py customer_data.csv --api-key sk-xxx --output custom_reports/
 
-© 2025 Algorzen Research Division | Developed by Om Singh
+© 2025 Algorzen Research Division | Developed by Rishi Singh
         """
     )
     
@@ -52,8 +52,8 @@ Examples:
     parser.add_argument(
         '--author',
         type=str,
-        default='Om Singh',
-        help='Report author name (default: Om Singh)'
+    default='Rishi Singh',
+    help='Report author name (default: Rishi Singh)'
     )
     
     parser.add_argument(

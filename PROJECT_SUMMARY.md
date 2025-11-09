@@ -386,7 +386,7 @@ Documented in README.md:
 
 ## 📞 Support & Contact
 
-- **Author**: Om Singh
+- **Author**: Rishi Singh
 - **Organization**: Algorzen Research Division
 - **Repository**: rizzshi/DataSphere
 - **Project**: AiInsight
@@ -458,7 +458,7 @@ python setup.py
 
 The **AI Insight Reporter** is a complete, production-ready system that exceeds all stated requirements. It's ready to transform datasets into executive-level business intelligence reports with minimal configuration.
 
-**Built with ❤️ by Om Singh for Algorzen Research Division**
+**Built with ❤️ by Rishi Singh for Algorzen Research Division**
 
 ---
 

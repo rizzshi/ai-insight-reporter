@@ -3,11 +3,11 @@ AI Insight Reporter - Algorzen Research Division
 Automated Business Intelligence System
 
 Version: 1.0.0
-Author: Om Singh
+Author: Rishi Singh
 """
 
 __version__ = "1.0.0"
-__author__ = "Om Singh"
+__author__ = "Rishi Singh"
 __email__ = "om@algorzen.research"
 __license__ = "MIT"
 

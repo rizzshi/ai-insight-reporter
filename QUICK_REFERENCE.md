@@ -204,7 +204,7 @@ OPENAI_MODEL=gpt-4-turbo-preview
 
 # Optional - branding
 COMPANY_NAME=Algorzen Research Division
-AUTHOR_NAME=Om Singh
+AUTHOR_NAME=Rishi Singh
 ```
 
 ---
@@ -319,11 +319,11 @@ See `TROUBLESHOOTING.md` for more details.
 
 - **Issues**: GitHub Issues
 - **Questions**: GitHub Discussions  
-- **Author**: Om Singh (@rizzshi)
+- **Author**: Rishi Singh (@rizzshi)
 - **Project**: https://github.com/rizzshi/DataSphere
 
 ---
 
 **Built with ❤️ by Algorzen Research Division**
 
-© 2025 Algorzen Research | Om Singh
+© 2025 Algorzen Research | Rishi Singh

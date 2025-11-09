@@ -310,4 +310,4 @@ Every contribution, no matter how small, helps make AI Insight Reporter better!
 
 **Built with ❤️ by the Algorzen Community**
 
-© 2025 Algorzen Research Division | Om Singh
+© 2025 Algorzen Research Division | Rishi Singh

@@ -27,7 +27,7 @@ class AlgorzenReportTemplate:
     Custom PDF template with Algorzen branding
     """
     
-    def __init__(self, filename: str, author: str = "Om Singh"):
+    def __init__(self, filename: str, author: str = "Rishi Singh"):
         """
         Initialize report template
         
@@ -315,7 +315,7 @@ def generate_pdf_report(
     kpis: Dict,
     narrative: Dict,
     output_dir: str = "reports",
-    author: str = "Om Singh"
+    author: str = "Rishi Singh"
 ) -> str:
     """
     Generate comprehensive PDF report

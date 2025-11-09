@@ -159,7 +159,7 @@ def show_next_steps():
     
     print("="*60)
     print("  Built with ❤️  by Algorzen Research Division")
-    print("  Author: Om Singh")
+    print("  Author: Rishi Singh")
     print("="*60 + "\n")
 
 
@@ -171,7 +171,7 @@ def main():
     ║         🤖 AI INSIGHT REPORTER - SETUP WIZARD           ║
     ║                                                          ║
     ║              Algorzen Research Division                  ║
-    ║                   by Om Singh                            ║
+    ║                   by Rishi Singh                         ║
     ║                                                          ║
     ╚══════════════════════════════════════════════════════════╝
     """)

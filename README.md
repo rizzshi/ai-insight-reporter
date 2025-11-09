@@ -201,7 +201,7 @@ OPENAI_MODEL=gpt-4-turbo-preview
 
 # Report Branding (optional)
 COMPANY_NAME=Algorzen Research Division
-AUTHOR_NAME=Om Singh
+AUTHOR_NAME=Rishi Singh
 ```
 
 ### CLI Arguments
@@ -214,7 +214,7 @@ Arguments:
   
 Options:
   --output DIR            Output directory (default: reports/)
-  --author NAME           Report author (default: Om Singh)
+  --author NAME           Report author (default: Rishi Singh)
   --api-key KEY           OpenAI API key for GPT-4
   --no-pdf                Skip PDF generation
   --verbose               Show detailed progress
@@ -353,7 +353,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## 👨‍💻 Author
 
-**Om Singh**  
+**Rishi Singh**  
 Algorzen Research Division
 
 - GitHub: [@rizzshi](https://github.com/rizzshi)
@@ -374,7 +374,7 @@ Algorzen Research Division
 
 For questions, issues, or feature requests:
 - Open an issue on GitHub
-- Contact: Om Singh via GitHub
+- Contact: Rishi Singh via GitHub
 
 ---
 

@@ -69,7 +69,7 @@ reports/assets/
 {
   "project": "AI Insight Reporter",
   "report_id": "AIR-2025-Q4-20251110",
-  "generated_by": "Om Singh",
+  "generated_by": "Rishi Singh",
   "created_at": "2025-11-10T01:26:17.699074",
   "tone": "Executive Business",
   "openai_used": false,
@@ -366,7 +366,7 @@ System is **production-ready** and exceeds expectations!
 
 ---
 
-**Tested by:** Om Singh  
+**Tested by:** Rishi Singh  
 **Date:** November 10, 2025  
 **Algorzen Research Division**
 

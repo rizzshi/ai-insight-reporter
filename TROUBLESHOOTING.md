@@ -475,6 +475,6 @@ else:
 
 ---
 
-**Still stuck? Contact Om Singh via GitHub Issues!**
+**Still stuck? Contact Rishi Singh via GitHub Issues!**
 
 © 2025 Algorzen Research Division
