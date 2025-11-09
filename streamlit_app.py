@@ -138,12 +138,12 @@ def main():
         author_name = st.text_input("Report Author", value="Om Singh")
         
         st.markdown("---")
-        st.markdown("**© 2025 Algorzen Research**")
-        st.markdown("*Developed by Om Singh*")
+        st.markdown("**© 2025 Algorzen**")
+        st.markdown("*Developed by Rishi Singh*")
     
     # Main content
-    st.markdown('<div class="main-header">🤖 AI Insight Reporter</div>', unsafe_allow_html=True)
-    st.markdown('<div class="sub-header">Algorzen Research Division — Automated Business Intelligence</div>', unsafe_allow_html=True)
+    st.markdown('<div class="main-header">📊 Eviden Insight Reporter</div>', unsafe_allow_html=True)
+    st.markdown('<div class="sub-header">Created by Algorzen — Automated Business Intelligence</div>', unsafe_allow_html=True)
     
     # File upload
     st.markdown("### 📤 Upload Your Dataset")

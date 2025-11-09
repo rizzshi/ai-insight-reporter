@@ -1,5 +1,5 @@
 """
-Utility Functions - Helper functions for AI Insight Reporter
+Utility Functions - Helper functions for Eviden Insight Reporter
 Eviden (Created by Algorzen)
 
 Common utility functions used across the application.

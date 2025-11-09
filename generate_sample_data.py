@@ -19,7 +19,7 @@ import argparse
 def main():
     """Generate sample dataset"""
     parser = argparse.ArgumentParser(
-        description="Generate synthetic dataset for testing AI Insight Reporter"
+        description="Generate synthetic dataset for testing Eviden Insight Reporter"
     )
     
     parser.add_argument(

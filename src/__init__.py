@@ -1,5 +1,5 @@
 """
-AI Insight Reporter - Algorzen Research Division
+Eviden Insight Reporter (Created by Algorzen)
 Automated Business Intelligence System
 
 Version: 1.0.0
@@ -8,7 +8,7 @@ Author: Rishi Singh
 
 __version__ = "1.0.0"
 __author__ = "Rishi Singh"
-__email__ = "om@algorzen.research"
+__email__ = "rishi@algorzen.com"
 __license__ = "MIT"
 
 from .eda_engine import perform_eda, EDAEngine
