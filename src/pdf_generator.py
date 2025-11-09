@@ -22,9 +22,9 @@ from typing import Dict, List, Optional
 import json
 
 
-class AlgorzenReportTemplate:
+class EvidenReportTemplate:
     """
-    Custom PDF template with Algorzen branding
+    Custom PDF template with Eviden branding
     """
     
     def __init__(self, filename: str, author: str = "Rishi Singh"):
@@ -39,7 +39,7 @@ class AlgorzenReportTemplate:
         self.author = author
         self.timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
         self.date_readable = datetime.now().strftime("%B %d, %Y")
-        
+        self.logo_path = str(Path(__file__).parent.parent / "assets" / "eviden_logo.png")
         # Create document
         self.doc = SimpleDocTemplate(
             filename,
@@ -49,7 +49,6 @@ class AlgorzenReportTemplate:
             topMargin=1*inch,
             bottomMargin=0.75*inch
         )
-        
         self.story = []
         self.styles = getSampleStyleSheet()
         self._setup_custom_styles()
@@ -118,47 +117,32 @@ class AlgorzenReportTemplate:
     
     def _header_footer(self, canvas_obj, doc):
         """
-        Add header and footer to each page
-        
-        Args:
-            canvas_obj: ReportLab canvas
-            doc: Document object
+        Add header and footer to each page with Eviden logo
         """
         canvas_obj.saveState()
-        
-        # Header
-        canvas_obj.setFont('Helvetica-Bold', 10)
-        canvas_obj.setFillColor(colors.HexColor('#1a1a2e'))
-        canvas_obj.drawString(
-            0.75*inch, 
-            letter[1] - 0.5*inch,
-            "Algorzen Research Division — AI Insight Reporter"
-        )
-        
-        canvas_obj.setLineWidth(2)
-        canvas_obj.setStrokeColor(colors.HexColor('#e94560'))
-        canvas_obj.line(
-            0.75*inch, 
-            letter[1] - 0.6*inch,
-            letter[0] - 0.75*inch,
-            letter[1] - 0.6*inch
-        )
-        
+        # Header: Eviden logo
+        try:
+            logo_width = 1.2 * inch
+            logo_height = 0.45 * inch
+            canvas_obj.drawImage(self.logo_path, 0.75*inch, letter[1] - 0.7*inch, width=logo_width, height=logo_height, mask='auto')
+        except Exception:
+            # fallback to text if logo missing
+            canvas_obj.setFont('Helvetica-Bold', 12)
+            canvas_obj.setFillColor(colors.HexColor('#1a1a2e'))
+            canvas_obj.drawString(0.75*inch, letter[1] - 0.5*inch, "Eviden — Insight Reporter")
         # Footer
         canvas_obj.setFont('Helvetica', 8)
         canvas_obj.setFillColor(colors.HexColor('#666666'))
         canvas_obj.drawString(
             0.75*inch,
             0.5*inch,
-            f"© 2025 Algorzen Research | Author: {self.author}"
+            f"© 2025 Eviden | Author: {self.author}"
         )
-        
         canvas_obj.drawRightString(
             letter[0] - 0.75*inch,
             0.5*inch,
             f"Page {doc.page} | Generated: {self.date_readable}"
         )
-        
         canvas_obj.restoreState()
     
     def add_title_page(self, dataset_type: str, record_count: int):
@@ -169,14 +153,17 @@ class AlgorzenReportTemplate:
             dataset_type: Type of dataset analyzed
             record_count: Number of records
         """
+        # Logo at top
+        if self.logo_path and Path(self.logo_path).exists():
+            self.story.append(Image(self.logo_path, width=2.5*inch, height=0.9*inch))
+            self.story.append(Spacer(1, 0.2*inch))
         # Title
         title = Paragraph(
-            "AI-Powered Business Intelligence Report",
+            "Eviden Insight Report",
             self.styles['AlgorzenTitle']
         )
         self.story.append(title)
         self.story.append(Spacer(1, 0.3*inch))
-        
         # Subtitle
         subtitle = Paragraph(
             f"Automated Analysis of {dataset_type.title()} Dataset<br/>"
@@ -193,7 +180,7 @@ class AlgorzenReportTemplate:
             ['Dataset Type:', dataset_type.title()],
             ['Record Count:', f"{record_count:,}"],
             ['Author:', self.author],
-            ['Division:', 'Algorzen Research']
+            ['Division:', 'Eviden']
         ]
         
         metadata_table = Table(metadata, colWidths=[2.5*inch, 3.5*inch])
@@ -339,7 +326,7 @@ def generate_pdf_report(
     filename = output_path / f"Algorzen_Insight_Report_{timestamp}.pdf"
     
     # Initialize report
-    report = AlgorzenReportTemplate(str(filename), author)
+    report = EvidenReportTemplate(str(filename), author)
     
     # Add title page
     dataset_info = eda_summary.get('dataset_info', {})
