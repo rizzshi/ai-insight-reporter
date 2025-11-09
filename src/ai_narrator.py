@@ -1,6 +1,6 @@
 """
 AI Narrator - GPT-4 Powered Narrative Generation
-Algorzen Research Division
+Eviden (Created by Algorzen)
 
 This module generates executive-level business narratives using
 OpenAI's GPT-4 API, with intelligent fallback for offline operation.
@@ -61,7 +61,7 @@ class AINarrator:
         dataset_info = eda_summary.get('dataset_info', {})
         missing_info = eda_summary.get('missing_values', {})
         
-        prompt = f"""You are a senior business analyst at Algorzen Research Division. Analyze the following dataset and provide an executive-level business intelligence report.
+    prompt = f"""You are a senior business analyst at Eviden (Created by Algorzen). Analyze the following dataset and provide an executive-level business intelligence report.
 
 DATASET OVERVIEW:
 - Type: {dataset_info.get('dataset_type', 'general').title()}
@@ -127,7 +127,7 @@ Format: Use clear headings and bullet points
                 messages=[
                     {
                         "role": "system",
-                        "content": "You are a senior business analyst at Algorzen Research Division, specialized in data-driven strategic insights."
+                        "content": "You are a senior business analyst at Eviden (Created by Algorzen), specialized in data-driven strategic insights."
                     },
                     {
                         "role": "user",

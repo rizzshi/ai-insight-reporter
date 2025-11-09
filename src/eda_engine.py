@@ -1,6 +1,6 @@
 """
 EDA Engine - Automated Exploratory Data Analysis
-Algorzen Research Division
+Eviden (Created by Algorzen)
 
 This module performs comprehensive automated EDA including:
 - Dataset type detection
@@ -176,7 +176,7 @@ class EDAEngine:
             cbar_kws={"shrink": 0.8}
         )
         
-        plt.title('Correlation Matrix - Algorzen Analysis', fontsize=16, fontweight='bold', pad=20)
+    plt.title('Correlation Matrix - Eviden Analysis', fontsize=16, fontweight='bold', pad=20)
         plt.tight_layout()
         
         output_path = self.output_dir / "correlation_heatmap.png"
@@ -218,7 +218,7 @@ class EDAEngine:
             for idx in range(len(top_numeric), len(axes)):
                 axes[idx].axis('off')
             
-            plt.suptitle('Numeric Distributions - Algorzen Analysis', 
+            plt.suptitle('Numeric Distributions - Eviden Analysis', 
                         fontsize=16, fontweight='bold', y=1.00)
             plt.tight_layout()
             
@@ -256,7 +256,7 @@ class EDAEngine:
                 for idx in range(len(valid_cats), len(axes)):
                     axes[idx].axis('off')
                 
-                plt.suptitle('Categorical Distributions - Algorzen Analysis', 
+                plt.suptitle('Categorical Distributions - Eviden Analysis', 
                             fontsize=16, fontweight='bold', y=1.00)
                 plt.tight_layout()
                 

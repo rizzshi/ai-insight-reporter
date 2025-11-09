@@ -1,4 +1,4 @@
-# AI Insight Reporter - Algorzen Research Division
+# Eviden Insight Reporter (Created by Algorzen)
 # Python 3.10+ required
 
 # Core Data Science Libraries

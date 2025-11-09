@@ -477,4 +477,4 @@ else:
 
 **Still stuck? Contact Rishi Singh via GitHub Issues!**
 
-© 2025 Algorzen Research Division
+© 2025 Algorzen (Eviden)

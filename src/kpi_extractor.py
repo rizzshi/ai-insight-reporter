@@ -1,6 +1,6 @@
 """
 KPI Extractor - Automatic Key Performance Indicator Calculation
-Algorzen Research Division
+Eviden (Created by Algorzen)
 
 This module automatically detects and calculates relevant KPIs
 based on the dataset type and available columns.

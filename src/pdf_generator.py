@@ -68,9 +68,19 @@ class EvidenReportTemplate:
             fontName='Helvetica-Bold'
         ))
         
+        # Title Style
+        self.styles.add(ParagraphStyle(
+            name='EvidenTitle',
+            parent=self.styles['Heading1'],
+            fontSize=24,
+            textColor=colors.HexColor('#1a1a2e'),
+            spaceAfter=12,
+            alignment=TA_CENTER,
+            fontName='Helvetica-Bold'
+        ))
         # Subtitle Style
         self.styles.add(ParagraphStyle(
-            name='AlgorzenSubtitle',
+            name='EvidenSubtitle',
             parent=self.styles['Normal'],
             fontSize=12,
             textColor=colors.HexColor('#16213e'),
@@ -78,10 +88,9 @@ class EvidenReportTemplate:
             alignment=TA_CENTER,
             fontName='Helvetica'
         ))
-        
         # Section Header
         self.styles.add(ParagraphStyle(
-            name='AlgorzenSection',
+            name='EvidenSection',
             parent=self.styles['Heading2'],
             fontSize=16,
             textColor=colors.HexColor('#0f3460'),
@@ -93,36 +102,23 @@ class EvidenReportTemplate:
             borderPadding=5,
             backColor=colors.HexColor('#f0f0f0')
         ))
-        
         # Body Text
         self.styles.add(ParagraphStyle(
-            name='AlgorzenBody',
-            parent=self.styles['Normal'],
-            fontSize=11,
-            textColor=colors.HexColor('#2a2a2a'),
-            spaceAfter=12,
-            alignment=TA_JUSTIFY,
-            leading=16
-        ))
-        
-        # KPI Style
-        self.styles.add(ParagraphStyle(
-            name='AlgorzenKPI',
+            name='EvidenBody',
             parent=self.styles['Normal'],
             fontSize=10,
-            textColor=colors.HexColor('#0f3460'),
-            spaceAfter=6,
-            leftIndent=20
+            textColor=colors.HexColor('#222222'),
+            spaceAfter=8,
+            fontName='Helvetica'
         ))
-    
-    def _header_footer(self, canvas_obj, doc):
-        """
-        Add header and footer to each page with Eviden logo
-        """
-        canvas_obj.saveState()
-        # Header: Eviden logo
-        try:
-            logo_width = 1.2 * inch
+        # KPI Table
+        self.styles.add(ParagraphStyle(
+            name='EvidenKPI',
+            parent=self.styles['Normal'],
+            fontSize=10,
+            textColor=colors.HexColor('#e94560'),
+            fontName='Helvetica-Bold'
+        ))
             logo_height = 0.45 * inch
             canvas_obj.drawImage(self.logo_path, 0.75*inch, letter[1] - 0.7*inch, width=logo_width, height=logo_height, mask='auto')
         except Exception:
@@ -158,12 +154,12 @@ class EvidenReportTemplate:
             self.story.append(Image(self.logo_path, width=2.5*inch, height=0.9*inch))
             self.story.append(Spacer(1, 0.05*inch))
             # Add 'Created by Algorzen' under logo
-            self.story.append(Paragraph('<b>Created by Algorzen</b>', self.styles['AlgorzenSubtitle']))
+            self.story.append(Paragraph('<b>Created by Algorzen</b>', self.styles['EvidenSubtitle']))
             self.story.append(Spacer(1, 0.15*inch))
         # Title
         title = Paragraph(
             "Eviden Insight Report",
-            self.styles['AlgorzenTitle']
+            self.styles['EvidenTitle']
         )
         self.story.append(title)
         self.story.append(Spacer(1, 0.3*inch))
@@ -171,7 +167,7 @@ class EvidenReportTemplate:
         subtitle = Paragraph(
             f"Automated Analysis of {dataset_type.title()} Dataset<br/>"
             f"{record_count:,} Records Analyzed",
-            self.styles['AlgorzenSubtitle']
+            self.styles['EvidenSubtitle']
         )
         self.story.append(subtitle)
         self.story.append(Spacer(1, 0.5*inch))
@@ -211,7 +207,7 @@ class EvidenReportTemplate:
             title: Section title
             content: Section content (can include HTML-like markup)
         """
-        section_title = Paragraph(title, self.styles['AlgorzenSection'])
+    section_title = Paragraph(title, self.styles['EvidenSection'])
         self.story.append(section_title)
         self.story.append(Spacer(1, 0.15*inch))
         
@@ -219,7 +215,7 @@ class EvidenReportTemplate:
         paragraphs = content.split('\n\n')
         for para in paragraphs:
             if para.strip():
-                p = Paragraph(para.strip(), self.styles['AlgorzenBody'])
+                p = Paragraph(para.strip(), self.styles['EvidenBody'])
                 self.story.append(p)
                 self.story.append(Spacer(1, 0.1*inch))
     
@@ -230,7 +226,7 @@ class EvidenReportTemplate:
         Args:
             kpis: Dictionary of KPIs
         """
-        section_title = Paragraph("Key Performance Indicators", self.styles['AlgorzenSection'])
+    section_title = Paragraph("Key Performance Indicators", self.styles['EvidenSection'])
         self.story.append(section_title)
         self.story.append(Spacer(1, 0.15*inch))
         
@@ -326,7 +322,7 @@ def generate_pdf_report(
     
     # Generate filename with timestamp
     timestamp = datetime.now().strftime("%Y%m%d")
-    filename = output_path / f"Algorzen_Insight_Report_{timestamp}.pdf"
+    filename = output_path / f"Eviden_Insight_Report_{timestamp}.pdf"
     
     # Initialize report
     report = EvidenReportTemplate(str(filename), author)
@@ -383,7 +379,7 @@ def generate_pdf_report(
     • Dataset Integrity: {((dataset_info.get('rows', 0) * dataset_info.get('columns', 1) - missing_info.get('total_missing', 0)) / (dataset_info.get('rows', 1) * dataset_info.get('columns', 1)) * 100):.2f}% Complete<br/>
     <br/>
     <b>Analysis Methodology:</b><br/>
-    • Engine: Algorzen AI Insight Reporter v1.0<br/>
+    • Engine: Eviden Insight Reporter v1.0 (Created by Algorzen)<br/>
     • AI Model: {narrative.get('model', 'N/A')}<br/>
     • Generation Method: {narrative.get('method', 'N/A')}<br/>
     """

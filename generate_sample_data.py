@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Generate Sample Dataset - Quick Data Generator
-Algorzen Research Division
+Eviden (Created by Algorzen)
 
 Generates realistic synthetic datasets for testing and demonstration.
 """

@@ -50,10 +50,10 @@ All requirements met, fully tested, production-ready.
 #### 🔹 PDF Report ✅
 
 - [x] Combine visuals, EDA summary, and GPT narrative
-- [x] Include Algorzen branding:
-  - [x] Header: *"Algorzen Research Division — AI Insight Reporter"*
-  - [x] Footer: *"© 2025 Algorzen Research | Author: Rishi Singh"*
-- [x] Save report with timestamp: `reports/Algorzen_Insight_Report_YYYYMMDD.pdf`
+-- [x] Include Eviden branding (Created by Algorzen):
+  - [x] Header: *"Eviden — Insight Reporter (Created by Algorzen)"*
+  - [x] Footer: *"© 2025 Algorzen | Author: Rishi Singh"*
+- [x] Save report with timestamp: `reports/Eviden_Insight_Report_YYYYMMDD.pdf`
 
 **Implementation:** `src/pdf_generator.py` (420 lines)
 
@@ -63,7 +63,7 @@ All requirements met, fully tested, production-ready.
 - [x] EDA summary preview
 - [x] GPT narrative section
 - [x] Generate Report button
-- [x] Sidebar branding with Algorzen logo
+- [x] Sidebar branding with Eviden logo (Created by Algorzen)
 
 **Implementation:** `streamlit_app.py` (280 lines)
 
@@ -190,7 +190,7 @@ All requirements met, fully tested, production-ready.
 - [x] Visualization generation
 - [x] AI narrative (GPT-4 + fallback)
 - [x] PDF report generation
-- [x] Algorzen branding
+- [x] Eviden branding (Created by Algorzen)
 - [x] CLI tool
 - [x] Web UI
 
@@ -255,8 +255,8 @@ All requirements met, fully tested, production-ready.
 
 ### 🎨 Branding ✅
 
-- [x] Algorzen header in PDFs
-- [x] Algorzen footer with copyright
+- [x] Eviden header in PDFs (Created by Algorzen)
+- [x] Eviden footer with copyright
 - [x] Professional color scheme
 - [x] Consistent styling
 - [x] Author attribution
@@ -328,7 +328,7 @@ All requirements met, fully tested, production-ready.
 
 4. **Business Value** ✓
    - Executive-level reports
-   - Algorzen branding
+  - Eviden branding (Created by Algorzen)
    - Strategic insights
 
 ---
@@ -357,9 +357,9 @@ All requirements satisfied, fully documented, tested, and ready for use.
 
 Built with ❤️ by Rishi Singh
 
-Algorzen Research Division
+Eviden (Created by Algorzen)
 
-© 2025 Algorzen Research
+© 2025 Algorzen
 
 ---
 
