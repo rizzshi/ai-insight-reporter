@@ -1,11 +1,14 @@
 
+
 <p align="center">
   <img src="assets/eviden_logo.png" alt="Eviden" width="220"/>
+  <br>
+  <b>Created by Algorzen</b>
 </p>
 
 # 🤖 Eviden Insight Reporter
 
-> **Autonomous Business Intelligence System by Eviden**
+> **Autonomous Business Intelligence System by Algorzen**
 
 
 An enterprise-grade data analytics automation platform that transforms raw datasets into executive-level business intelligence reports with AI-powered narratives, comprehensive EDA, and professional PDF outputs.

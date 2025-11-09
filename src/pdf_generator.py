@@ -156,7 +156,10 @@ class EvidenReportTemplate:
         # Logo at top
         if self.logo_path and Path(self.logo_path).exists():
             self.story.append(Image(self.logo_path, width=2.5*inch, height=0.9*inch))
-            self.story.append(Spacer(1, 0.2*inch))
+            self.story.append(Spacer(1, 0.05*inch))
+            # Add 'Created by Algorzen' under logo
+            self.story.append(Paragraph('<b>Created by Algorzen</b>', self.styles['AlgorzenSubtitle']))
+            self.story.append(Spacer(1, 0.15*inch))
         # Title
         title = Paragraph(
             "Eviden Insight Report",
