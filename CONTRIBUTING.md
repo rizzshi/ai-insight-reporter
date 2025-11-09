@@ -304,10 +304,10 @@ If you have questions about contributing:
 
 ## 🎉 Thank You!
 
-Every contribution, no matter how small, helps make AI Insight Reporter better!
+Every contribution, no matter how small, helps make Eviden Insight Reporter better!
 
 ---
 
 **Built with ❤️ by the Algorzen Community**
 
-© 2025 Algorzen Research Division | Rishi Singh
+© 2025 Algorzen | Rishi Singh
