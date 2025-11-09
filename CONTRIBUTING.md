@@ -1,6 +1,6 @@
-# Contributing to AI Insight Reporter
+# Contributing to Eviden Insight Reporter
 
-Thank you for considering contributing to the AI Insight Reporter! This document provides guidelines and instructions for contributing.
+Thank you for considering contributing to the Eviden Insight Reporter (Created by Algorzen)! This document provides guidelines and instructions for contributing.
 
 ## 🎯 How to Contribute
 
