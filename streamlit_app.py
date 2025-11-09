@@ -138,8 +138,8 @@ def main():
             
             # Dataset preview
             with st.expander("📊 Dataset Preview", expanded=False):
-                # Use st.table() instead of st.dataframe() to avoid PyArrow dependency
-                st.write(df.head(20))
+                # Convert DataFrame to HTML to avoid PyArrow dependency
+                st.markdown(df.head(20).to_html(index=False, max_rows=20), unsafe_allow_html=True)
                 
                 col1, col2, col3 = st.columns(3)
                 col1.metric("Total Rows", f"{len(df):,}")
