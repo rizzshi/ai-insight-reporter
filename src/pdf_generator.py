@@ -119,6 +119,15 @@ class EvidenReportTemplate:
             textColor=colors.HexColor('#e94560'),
             fontName='Helvetica-Bold'
         ))
+    
+    def _header_footer(self, canvas_obj, doc):
+        """
+        Add header and footer to each page with Eviden logo
+        """
+        canvas_obj.saveState()
+        # Header: Eviden logo
+        try:
+            logo_width = 1.2 * inch
             logo_height = 0.45 * inch
             canvas_obj.drawImage(self.logo_path, 0.75*inch, letter[1] - 0.7*inch, width=logo_width, height=logo_height, mask='auto')
         except Exception:
@@ -207,7 +216,7 @@ class EvidenReportTemplate:
             title: Section title
             content: Section content (can include HTML-like markup)
         """
-    section_title = Paragraph(title, self.styles['EvidenSection'])
+        section_title = Paragraph(title, self.styles['EvidenSection'])
         self.story.append(section_title)
         self.story.append(Spacer(1, 0.15*inch))
         
@@ -226,7 +235,7 @@ class EvidenReportTemplate:
         Args:
             kpis: Dictionary of KPIs
         """
-    section_title = Paragraph("Key Performance Indicators", self.styles['EvidenSection'])
+        section_title = Paragraph("Key Performance Indicators", self.styles['EvidenSection'])
         self.story.append(section_title)
         self.story.append(Spacer(1, 0.15*inch))
         

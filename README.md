@@ -190,7 +190,7 @@ Two-tier intelligent narrative system:
 
 ### 5. PDF Report Assembly
 Professional report generation with:
-- Algorzen Research Division branding
+- Eviden branding (Created by Algorzen)
 - Title page with metadata
 - KPI summary tables
 - Visualizations (heatmaps, distributions)
@@ -209,7 +209,7 @@ OPENAI_API_KEY=sk-your-api-key-here
 OPENAI_MODEL=gpt-4-turbo-preview
 
 # Report Branding (optional)
-COMPANY_NAME=Algorzen Research Division
+COMPANY_NAME=Algorzen
 AUTHOR_NAME=Rishi Singh
 ```
 
@@ -245,7 +245,7 @@ AiInsight/
 │   └── sample_dataset.csv     # Sample sales data (1000 records)
 ├── reports/
 │   ├── assets/                # Generated charts and visualizations
-│   ├── Algorzen_Insight_Report_YYYYMMDD.pdf
+│   ├── Eviden_Insight_Report_YYYYMMDD.pdf
 │   └── report_metadata.json   # Report metadata
 ├── main.py                    # CLI entry point
 ├── streamlit_app.py           # Web UI application
